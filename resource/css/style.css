@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Aclonica);
+*{padding:0;margin:0;}
+html,body
+{
+	width:100%;
+	height:100%;
+	overflow: auto;
+}
+#viewHolder
+{
+	width:100%;
+	height:100%;
+overflow: auto;
+}
+/* splash view */
+#splashView
+{
+	position:absolute;
+	background-color: #3885be;
+	width:100%;
+	height:100%;
+	font-family: 'Aclonica', sans-serif;
+}
+#splashView h1
+{
+	font-family: 'Aclonica', sans-serif;
+	color:#FFFFFF;
+	width:100%;
+	margin-top: 20%;
+	font-size: 60px;
+	text-align: center;
+}
+#logoHolder
+{
+	width:100%;
+	
+	text-align: center;
+}
+/* MENU VIEW */
+#menuView
+{
+	position:absolute;
+	background-color: #3885be;
+	width:100%;
+	height:100%;
+	font-family: 'Aclonica', sans-serif;
+}
+#menuView ul
+{
+	list-style: none;
+	width:100%;
+	margin-top: 10%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#menuView ul li
+{
+	float:left;
+	width: 50%;
+	text-align: center;
+	padding-bottom: 50px;
+	color:#FFFFFF;
+	font-family: 'Aclonica', sans-serif;
+	text-transform:uppercase;
+	cursor: pointer;
+}
+#menuView ul li p
+{
+	padding-top: 10px;
+}
+/* BUDGET VIEW */
+#budgetView
+{
+	background: #ccc;
+}
+.clearBoth
+{
+	clear: both!important;
+	float:none!important;
+}
