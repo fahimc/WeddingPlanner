@@ -131,6 +131,8 @@ overflow: auto;
 #listModule
 {
 	padding: 20px;
+	position: relative;
+	
 }
 #listModule.budgetModule ul
 {
@@ -222,3 +224,20 @@ overflow: auto;
 #listModule.budgetModule .table li p
 {
 	padding: 10px;
+}
+#listModule.budgetModule .footer
+{
+	width:100%;
+	position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+}
+#listModule.budgetModule .footer ul
+{
+	list-style: none;
+}
+#listModule.budgetModule .footer .totalEHolder
+{
+	width:100%;
+}

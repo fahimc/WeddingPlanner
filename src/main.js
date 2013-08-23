@@ -11,8 +11,13 @@
 	function onLoad() {
 		ViewCommand.hideAll();
 		ViewCommand.show("splashView");
+		
+		Utensil.addListener(window,"resize",onResize);
 	}
-
+	function onResize()
+	{
+		Event.dispatch("RESIZE");
+	}
 	Main();
 }
 )(window);
