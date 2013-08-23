@@ -1,5 +1,5 @@
 var SplashView = function(){};
-Class.implement(SplashView,IView);
+Class.extend(SplashView,View);
 (function(){
 	
 	var _ = SplashView.prototype;

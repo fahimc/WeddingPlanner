@@ -79,3 +79,38 @@ overflow: auto;
 	clear: both!important;
 	float:none!important;
 }
+/* LIST VIEW */
+#listView
+{
+	position:absolute;
+	background-color: #E4E4E4;
+	width:100%;
+	height:100%;
+	font-family: 'Aclonica', sans-serif;
+}
+#listView .wrapper
+{
+	max-width: 800px;
+		background-color: #FFFFFF;
+		margin-left: auto;
+		margin-right: auto;
+}
+#listView .header
+{
+	width:100%;
+	height:50px;
+	background-color: #3885be;
+}
+#listView .header ul
+{
+	list-style: none;
+}
+#listView .header ul li
+{
+	display: inline-block;
+}
+#list_logo
+{
+	margin-left: 16px;
+	margin-top: 4px;
+}

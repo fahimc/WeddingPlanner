@@ -1,61 +1,70 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
- "http://www.w3.org/TR/html4/strict.dtd">
- 
- <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
- <head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <title>index</title>
- <meta name="author" content="" />
- <link type="text/css" rel="stylesheet" href="resource/css/style.css" />
- <script type="text/javascript" src="lib/fahimchowdhury/toolkitMax-v1014-compressed.js"></script>
- <script type="text/javascript" src="lib/greensock/easing/EasePack.js"></script>
- <script type="text/javascript" src="lib/greensock/plugins/CSSPlugin.js"></script>
- <script type="text/javascript" src="lib/greensock/plugins/CSSRulePlugin.js"></script>
- <script type="text/javascript" src="lib/greensock/TweenLite.js"></script>
- <script type="text/javascript" src="src/com/model/Model.js"></script>
- <script type="text/javascript" src="src/com/command/ViewCommand.js"></script>
- <script type="text/javascript" src="src/com/view/IVew.js"></script>
- <script type="text/javascript" src="src/com/view/View.js"></script>
- <script type="text/javascript" src="src/com/view/MenuView.js"></script>
- <script type="text/javascript" src="src/com/view/SplashView.js"></script>
- <script type="text/javascript" src="src/main.js"></script>
- 
- </head>
- <body>
- <div id="viewHolder" style="display: none;">
- 	<div id="splashView">
- 		<div id="logoHolder" >
- 		<h1 class="logo">
- 			WEDDING PLANNER
- 		</h1>
- 		<img src="resource/image/logo.png" width="241" height="198" border="0" alt="">
- 		</div>
- 	</div>
- 	<div id="menuView">
- 		<ul id="menuHolder">
- 			<li>
- 				<img src="resource/image/estimator_logo.png" />
- 				<p>budget estimator</p>
- 			</li>
- 			<li>
- 				<img src="resource/image/guest_logo.png" />
- 				<p>guest list</p>
- 			</li>
- 			<li>
- 				<img src="resource/image/todo_logo.png" />
- 				<p>todo list</p>
- 			</li>
- 			<li class="clearBoth">
- 				
- 			</li>
- 		</ul>
- 	</div>
- 	<div id="budgetView">
- 		<div class="wrapper">
- 			
- 		</div>
- 	</div>
- </div>
- </body>
- </html>
- 
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>index</title>
+		<meta name="author" content="" />
+		<link type="text/css" rel="stylesheet" href="resource/css/style.css" />
+		<script type="text/javascript" src="lib/fahimchowdhury/toolkitMax-v1014-compressed.js"></script>
+		<script type="text/javascript" src="lib/greensock/easing/EasePack.js"></script>
+		<script type="text/javascript" src="lib/greensock/plugins/CSSPlugin.js"></script>
+		<script type="text/javascript" src="lib/greensock/plugins/CSSRulePlugin.js"></script>
+		<script type="text/javascript" src="lib/greensock/TweenLite.js"></script>
+		<script type="text/javascript" src="src/com/model/Model.js"></script>
+		<script type="text/javascript" src="src/com/command/ViewCommand.js"></script>
+		<script type="text/javascript" src="src/com/view/IVew.js"></script>
+		<script type="text/javascript" src="src/com/view/View.js"></script>
+		<script type="text/javascript" src="src/com/view/MenuView.js"></script>
+		<script type="text/javascript" src="src/com/view/SplashView.js"></script>
+		<script type="text/javascript" src="src/com/view/ListView.js"></script>
+		<script type="text/javascript" src="src/main.js"></script>
+
+	</head>
+	<body>
+		<div id="viewHolder" style="display: none;">
+			<div id="splashView">
+				<div id="logoHolder" >
+					<h1 class="logo"> WEDDING PLANNER </h1>
+					<img src="resource/image/logo.png" width="241" height="198" border="0" alt="">
+				</div>
+			</div>
+			<div id="menuView">
+				<ul id="menuHolder">
+					<li id="budgetButton">
+						<img src="resource/image/estimator_logo.png" />
+						<p>
+							budget estimator
+						</p>
+					</li>
+					<li id="guestButton">
+						<img src="resource/image/guest_logo.png" />
+						<p>
+							guest list
+						</p>
+					</li>
+					<li id="todoButton">
+						<img src="resource/image/todo_logo.png" />
+						<p>
+							todo list
+						</p>
+					</li>
+					<li class="clearBoth">
+
+					</li>
+				</ul>
+			</div>
+			<div id="listView">
+				<div class="wrapper">
+					<div class="header">
+						<ul>
+							<li id="list_logo"></li>
+							<li id="list_title"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

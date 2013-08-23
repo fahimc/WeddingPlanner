@@ -1,0 +1,4 @@
+var IModule=
+{
+	build:function(){}
+}

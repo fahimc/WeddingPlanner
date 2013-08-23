@@ -1,7 +1,8 @@
 var model = new Model({
 	viewMapper : {
 		splashView : "SplashView",
-		menuView : "MenuView"
+		menuView : "MenuView",
+		listView : "ListView"
 	},
 	currentViews:[]
 });
@@ -14,6 +15,7 @@ var model = new Model({
 		if (model.get("viewMapper")[id] && window[model.get("viewMapper")[id]])
 		
 		var view = new window[model.get("viewMapper")[id]]();
+		view.id=id;
 		model.get("currentViews")[id]=view;
 			return view;
 		return null;
