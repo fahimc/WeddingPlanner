@@ -12,6 +12,8 @@ Class.implement(View,IView);
 	}
 	_.onHideComplete=function()
 	{
+		if(this.module)this.module.destory();
+		this.module=null;
 		document.getElementById(this.id).style.display="none";
 	}
 	_.getHandler=function(methodName)

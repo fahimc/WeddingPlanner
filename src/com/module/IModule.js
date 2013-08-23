@@ -1,4 +1,5 @@
 var IModule=
 {
-	build:function(){}
+	build:function(){},
+	destory:function(){}
 }

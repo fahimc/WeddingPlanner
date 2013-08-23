@@ -1,10 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Aclonica);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700);
 *{padding:0;margin:0;}
 html,body
 {
 	width:100%;
 	height:100%;
 	overflow: auto;
+	font-family: 'Exo', sans-serif;
 }
 #viewHolder
 {
@@ -86,7 +88,7 @@ overflow: auto;
 	background-color: #E4E4E4;
 	width:100%;
 	height:100%;
-	font-family: 'Aclonica', sans-serif;
+	
 }
 #listView .wrapper
 {
@@ -94,12 +96,14 @@ overflow: auto;
 		background-color: #FFFFFF;
 		margin-left: auto;
 		margin-right: auto;
+		height:100%;
 }
 #listView .header
 {
 	width:100%;
 	height:50px;
 	background-color: #3885be;
+	font-family: 'Aclonica', sans-serif;
 }
 #listView .header ul
 {
@@ -108,9 +112,113 @@ overflow: auto;
 #listView .header ul li
 {
 	display: inline-block;
+	vertical-align: middle;
 }
 #list_logo
 {
 	margin-left: 16px;
 	margin-top: 4px;
 }
+#list_title
+{
+	font-family: 'Open Sans', sans-serif;
+	color:#FFF;
+	font-size: 30px;
+	font-weight: 400;
+	
+}
+/* budget module */
+#listModule
+{
+	padding: 20px;
+}
+#listModule.budgetModule ul
+{
+	list-style: none;
+}
+#listModule.budgetModule ul li
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+#listModule.budgetModule ul.top
+{
+	width:100%;
+	
+	min-height:38px;
+}
+#listModule.budgetModule ul.top .left
+{
+	float: left;
+	
+}
+#listModule.budgetModule ul.top .right
+{
+	float: right;
+	margin-right: 10px;
+}
+#listModule.budgetModule  .total_budget_text
+{
+	display: inline-block;
+	color: #999999;
+	font-size: 14px;
+}
+#totalBudget
+{
+	display: inline-block;
+	color: #3885be;
+	font-size: 21px;
+	border: 0;
+	text-align: right;
+	width: 115px;
+}
+#listModule.budgetModule .table
+{
+	width:100%;
+	background-color: #e4e4e4;
+		margin-bottom: 5px;
+}
+#listTableHolder
+{
+	width:100%;
+	
+}
+}
+#listModule.budgetModule .table li
+{
+	display: inline-block;
+	font-size: 14px;
+	color:#333333;
+}
+#listModule.budgetModule .table .col1
+{
+	width:35%;
+}
+#listModule.budgetModule .table .col2
+{
+	width:35%;
+}
+#listModule.budgetModule .table .col3
+{
+	width:18%;
+	text-align: right;
+	color:#dd2c4d;
+}
+#listModule.budgetModule .table .title
+{
+	color: #999999;
+	font-size: 20px;
+}
+#listModule.budgetModule .table.headings
+{
+	margin-top: 10px;
+	background-color: #FFFFFF;
+	margin-bottom: 1px;
+}
+#listModule.budgetModule .table .middle
+{
+	text-align: right;
+}
+#listModule.budgetModule .table li p
+{
+	padding: 10px;

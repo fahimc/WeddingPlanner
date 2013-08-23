@@ -12,6 +12,7 @@
 		<script type="text/javascript" src="lib/greensock/plugins/CSSPlugin.js"></script>
 		<script type="text/javascript" src="lib/greensock/plugins/CSSRulePlugin.js"></script>
 		<script type="text/javascript" src="lib/greensock/TweenLite.js"></script>
+		<script type="text/javascript" src="lib/fahimchowdhury/loader/HTMLLoader.js"></script>
 		<script type="text/javascript" src="src/com/model/Model.js"></script>
 		<script type="text/javascript" src="src/com/command/ViewCommand.js"></script>
 		<script type="text/javascript" src="src/com/view/IVew.js"></script>
@@ -19,6 +20,9 @@
 		<script type="text/javascript" src="src/com/view/MenuView.js"></script>
 		<script type="text/javascript" src="src/com/view/SplashView.js"></script>
 		<script type="text/javascript" src="src/com/view/ListView.js"></script>
+		<script type="text/javascript" src="src/com/module/IModule.js"></script>
+		<script type="text/javascript" src="src/com/module/Module.js"></script>
+		<script type="text/javascript" src="src/com/module/BudgetModule.js"></script>
 		<script type="text/javascript" src="src/main.js"></script>
 
 	</head>
@@ -54,14 +58,60 @@
 
 					</li>
 				</ul>
+
 			</div>
 			<div id="listView">
 				<div class="wrapper">
 					<div class="header">
 						<ul>
-							<li id="list_logo"></li>
+							<li >
+								<img id="list_logo" src="" />
+							</li>
 							<li id="list_title"></li>
 						</ul>
+					</div>
+					<div id="listModule">
+						<ul class="top">
+							<li class="left">
+								<img src="resource/image/add_icon.gif" />
+							</li>
+							<li class="right">
+								<p class="total_budget_text">
+									total budget
+								</p>
+								<input type="text" id="totalBudget"/>
+							</li>
+							<li class="clearBoth"></li>
+						</ul>
+						<ul class="table headings">
+								<li class="col1 title">
+									description
+								</li>
+								<li class="col2 title middle">
+									estimation
+								</li>
+								<li class="col3"></li>
+							</ul>
+						<div id="listTableHolder">
+							<ul class="table">
+								<li class="col1">
+									<p>venue</p>
+								</li>
+								<li class="col2 middle">
+									<p>£300</p>
+								</li>
+								<li class="col3"><p>X</p></li>
+							</ul>
+							<ul class="table">
+								<li class="col1">
+									<p>venue</p>
+								</li>
+								<li class="col2 middle">
+									<p>£300</p>
+								</li>
+								<li class="col3"><p>X</p></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

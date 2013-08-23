@@ -45,7 +45,7 @@ Class.extend(MenuView,View);
 	_.onbudget=function()
 	{
 		ViewCommand.hide("menuView");
-		ViewCommand.show("listView");
+		ViewCommand.show("listView","BudgetModule");
 	}
 	_.animateIn=function()
 	{

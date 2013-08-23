@@ -1,4 +1,5 @@
 var model = new Model({
+	currency:"£",
 	viewMapper : {
 		splashView : "SplashView",
 		menuView : "MenuView",

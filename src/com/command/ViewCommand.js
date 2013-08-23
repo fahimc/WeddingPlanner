@@ -25,11 +25,16 @@ var ViewCommand=
 		}
 		holder.style.display="block";
 	},
-	show:function(id)
+	show:function(id,module)
 	{
 		if(!id)return;
 		
 		var view = model.getViewById(id);
+		if(module)
+		{
+			var  m =new window[module]();
+			view.module = m;
+		}
 		view.show();
 		
 		
@@ -39,7 +44,7 @@ var ViewCommand=
 		if(!id)return;
 		
 		var view = model.getViewById(id);
-	
+		
 		view.hide();
 	},
 	destroy:function(id)
