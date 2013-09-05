@@ -97,6 +97,7 @@ overflow: auto;
 		margin-left: auto;
 		margin-right: auto;
 		height:100%;
+		position: relative;
 }
 #listView .header
 {
@@ -225,19 +226,22 @@ overflow: auto;
 {
 	padding: 10px;
 }
-#listModule.budgetModule .footer
+#listView .footer
 {
 	width:100%;
-	position:fixed;
+	position:absolute;
    left:0px;
    bottom:0px;
    height:30px;
 }
-#listModule.budgetModule .footer ul
+#listView .footer ul
 {
 	list-style: none;
+	margin-left: 20px;
+	margin-right: 20px;
+
 }
-#listModule.budgetModule .footer .totalEHolder
+#listView .footer .totalEHolder
 {
-	width:100%;
+		background-color:#999999;
 }
