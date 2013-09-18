@@ -5,6 +5,11 @@ var model = new Model({
 		menuView : "MenuView",
 		listView : "ListView"
 	},
+	pageNames:{
+		budgetEstimator:"budgetestimator",
+		todo:"todo",
+		guestlist:"guestlist"
+	},
 	currentViews:[]
 });
 (function() {
@@ -20,5 +25,13 @@ var model = new Model({
 		model.get("currentViews")[id]=view;
 			return view;
 		return null;
-	}
+	};
+	_.getURLPage=function()
+	{
+		 return location.hash.replace("#","");
+	};
+	_.setPageName=function(name)
+	{
+		location.hash=name;
+	};
 })();

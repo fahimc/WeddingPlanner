@@ -4,14 +4,15 @@
 html,body
 {
 	width:100%;
-	height:100%;
+	min-height:100%;
 	overflow: auto;
 	font-family: 'Exo', sans-serif;
+	background-color: #E4E4E4;
 }
 #viewHolder
 {
 	width:100%;
-	height:100%;
+	min-height:100%;
 overflow: auto;
 }
 /* splash view */
@@ -229,19 +230,41 @@ overflow: auto;
 #listView .footer
 {
 	width:100%;
-	position:absolute;
-   left:0px;
+	position:fixed;
+ left:0;
    bottom:0px;
-   height:30px;
+  
+   
+  
 }
 #listView .footer ul
 {
 	list-style: none;
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 100%;
+	color:#FFFFFF;
+	font-weight: bold;
+	 max-width: 800px;
+	 margin-left: auto;
+   margin-right: auto;
 
 }
 #listView .footer .totalEHolder
 {
-		background-color:#999999;
+		background-color:#333333;
+		
+}
+#totalEstimationText,#totalOverText
+{
+	padding: 10px;
+	float: left;
+}
+#totalEstimationVal,#overBudgetVal
+{
+padding: 10px;
+	float:right;
+}
+#listView .footer .oveBHolder
+{
+		background-color:#bf3846;
+		
 }

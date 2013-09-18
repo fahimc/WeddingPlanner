@@ -16,7 +16,7 @@ Class.extend(MenuView,View);
 		document.getElementById(this.id).style.display="block";
 		this.setListeners();
 		this.animateIn();
-	}
+	};
 	
 	_.setListeners=function()
 	{
@@ -24,7 +24,7 @@ Class.extend(MenuView,View);
 		Utensil.addListener(document.getElementById(this.bugdetButtonId),"click",this.getHandler("onButtonClicked"));
 		Utensil.addListener(document.getElementById(this.guestButtonId),"click",this.getHandler("onButtonClicked"));
 		Utensil.addListener(document.getElementById(this.todoButtonId),"click",this.getHandler("onButtonClicked"));
-	}
+	};
 	_.onButtonClicked=function(event)
 	{
 	
@@ -33,27 +33,26 @@ Class.extend(MenuView,View);
 		switch(target.id)
 		{
 			case this.bugdetButtonId:
-			this.onbudget();
+
+			model.setPageName(model.get("pageNames").budgetEstimator);
 			break;
 			case this.guestButtonId:
+			model.setPageName(model.get("pageNames").guestlist);
 			break;
 			case this.todoButtonId:
+			model.setPageName(model.get("pageNames").todo);
 			break;
 		}
+		PageCommand.showPage();
 		console.log(target.id);
-	}
-	_.onbudget=function()
-	{
-		ViewCommand.hide("menuView");
-		ViewCommand.show("listView","BudgetModule");
-	}
+	};
 	_.animateIn=function()
 	{
 		TweenLite.to(document.getElementById(this.menuId),1,{css:{autoAlpha:1},onComplete:this.onAnimationComplete,onCompleteScope:this});
-	}
+	};
 	_.onAnimationComplete=function()
 	{
 		
 		
-	}
+	};
 })();

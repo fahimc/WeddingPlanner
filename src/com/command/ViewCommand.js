@@ -54,4 +54,4 @@ var ViewCommand=
 		var view = model.getViewById(id);
 		view.destory();
 	}
-}
+};
