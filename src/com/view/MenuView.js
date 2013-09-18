@@ -12,7 +12,7 @@ Class.extend(MenuView,View);
 	_.timer = null;
 	_.show=function()
 	{
-		document.getElementById(this.menuId).style.visibility="hidden";
+		document.getElementById(this.id).style.visibility="hidden";
 		document.getElementById(this.id).style.display="block";
 		this.setListeners();
 		this.animateIn();
@@ -48,7 +48,8 @@ Class.extend(MenuView,View);
 	};
 	_.animateIn=function()
 	{
-		TweenLite.to(document.getElementById(this.menuId),1,{css:{autoAlpha:1},onComplete:this.onAnimationComplete,onCompleteScope:this});
+		
+		TweenLite.to(document.getElementById(this.id),1,{css:{autoAlpha:1},onComplete:this.onAnimationComplete,onCompleteScope:this});
 	};
 	_.onAnimationComplete=function()
 	{

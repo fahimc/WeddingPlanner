@@ -10,6 +10,7 @@ Class.extend(SplashView,View);
 	_.show=function()
 	{
 		this.hideLogo();
+		document.getElementById(this.id).style.visibility="hidden";
 		document.getElementById(this.id).style.display="block";
 		this.animateLogo();
 	}
@@ -20,6 +21,7 @@ Class.extend(SplashView,View);
 	_.animateLogo=function()
 	{
 		TweenLite.to(document.getElementById(this.logoId),1,{css:{autoAlpha:1},onComplete:this.onAnimationComplete,onCompleteScope:this});
+		TweenLite.to(document.getElementById(this.id),1,{css:{autoAlpha:1}});
 	}
 	_.onAnimationComplete=function()
 	{
@@ -31,11 +33,17 @@ Class.extend(SplashView,View);
 		var root =this;
 		timer = setTimeout(function(){root.finish();},1000);
 	}
+	_.hide=function()
+	{
+		TweenLite.to(document.getElementById(this.logoId),1,{css:{autoAlpha:0}});
+		TweenLite.to(document.getElementById(this.id),1,{css:{autoAlpha:0}});
+	}
 	_.finish=function()
 	{
-		
-		ViewCommand.hide("splashView");
-		ViewCommand.show("menuView");
+		clearTimeout(this.timer);
+		this.timer=null;
+		model.setPageName(model.get("pageNames").menu);
+		PageCommand.showPage(model.get("pageNames").menu);
 	}
 	
 })();

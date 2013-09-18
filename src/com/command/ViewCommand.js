@@ -39,6 +39,14 @@ var ViewCommand=
 		
 		
 	},
+	hideCurrent:function()
+	{
+		var cv =  model.get("currentViews");
+		for(var key in cv)
+		{
+			cv[key].hide();
+		}
+	},
 	hide:function(id)
 	{
 		if(!id)return;

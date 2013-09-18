@@ -8,7 +8,8 @@ var model = new Model({
 	pageNames:{
 		budgetEstimator:"budgetestimator",
 		todo:"todo",
-		guestlist:"guestlist"
+		guestlist:"guestlist",
+		menu:"menu"
 	},
 	currentViews:[]
 });

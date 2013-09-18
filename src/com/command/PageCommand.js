@@ -2,6 +2,7 @@ var PageCommand=
 {
 	showPage:function(page)
 	{
+		
 		switch(model.getURLPage())
 		{
 			case model.get("pageNames").budgetEstimator:
@@ -12,7 +13,12 @@ var PageCommand=
 			
 			break;
 			case model.get("pageNames").todo:
-	
+			break;
+			case model.get("pageNames").menu:
+			this.showMenu();
+			break;
+			default:
+			this.showSplash();
 			break;
 		}
 	},
@@ -21,5 +27,15 @@ var PageCommand=
 		ViewCommand.hide("menuView");
 		ViewCommand.show("listView","BudgetModule");
 		
+	},
+	showSplash:function()
+	{
+		ViewCommand.hideAll();
+		ViewCommand.show("splashView");
+	},
+	showMenu:function()
+	{
+		ViewCommand.hideCurrent();
+		ViewCommand.show("menuView");
 	}
 };
